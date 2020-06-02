@@ -8,7 +8,7 @@ namespace SpellNumber.Services
         private readonly string[] _endingWithty = new string[] { "", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
         private readonly string[] _0s = new string[] { "", "", "hundred", "thousand", "", "", "million", "", "", "billion", "", "", "trillion", "", "", "quadrillion", "", "", "quintillion", "", "", "sextillion", "", "", "septillion", };
         
-        public string SpellNumber(double number)
+        public string SpellNumberInWords(double number)
         {
             if (number.ToString().Contains("E+"))
             {

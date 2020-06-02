@@ -2,7 +2,7 @@
 {
     public interface ISpellNumber
     {
-        string SpellNumber(double number);
+        string SpellNumberInWords(double number);
 
     }
 }

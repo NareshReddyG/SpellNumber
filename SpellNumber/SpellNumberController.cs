@@ -19,7 +19,7 @@ namespace SpellNumber
         [HttpGet]
         public string SpellNumber(double number)
         {
-            return _spellNumber.SpellNumber(number);
+            return _spellNumber.SpellNumberInWords(number);
         }
     }
 }
