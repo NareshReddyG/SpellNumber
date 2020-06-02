@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using SpellNumber.Services;
 
 namespace SpellNumber
 {
@@ -25,6 +26,7 @@ namespace SpellNumber
                                                             .AllowCredentials()
                                   );
             });
+            services.AddTransient<ISpellNumber, InternationalNumbering>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

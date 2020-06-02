@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SpellNumber.Services
+﻿namespace SpellNumber.Services
 {
     public interface ISpellNumber
     {
+        string SpellNumber(double number);
+
     }
 }
